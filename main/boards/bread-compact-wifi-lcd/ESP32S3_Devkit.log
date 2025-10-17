@@ -1,0 +1,82 @@
+[122/123] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/build/bootloader/bootloader.bin
+[123/123] C:\Windows\system32\cmd.exe /C "cd /D D:\git\github\khuuxuanngoc\L...uanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/build/bootloader/bootloader.bin 
+Bootloader binary size 0x4050 bytes. 0x3fb0 bytes (50%) free.
+[2205/2264] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/lvgl_display/lvgl_display.cc.obj
+In file included from D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/managed_components/espressif__esp_video/include/linux/videodev2.h:62, 
+                 from D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/main/display/lvgl_display/jpg/image_to_jpeg.h:9,
+                 from D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/main/display/lvgl_display/lvgl_display.cc:14:
+D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/managed_components/espressif__esp_video/include/linux/ioctl.h:54:9: warning: "_IO" redefined   54 | #define _IO(type,nr)        _IOC(_IOC_NONE,(type),(nr),0)
+      |         ^~~
+In file included from C:/Users/XNgoc/esp/v5.5.1/esp-idf/components/lwip/include/lwip/sockets.h:8,
+                 from C:/Users/XNgoc/esp/v5.5.1/esp-idf/components/lwip/port/esp32xx/include/sys/socket.h:15,
+                 from D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/main/audio/processors/audio_debugger.h:7,
+                 from D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/main/audio/audio_service.h:22,
+                 from D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/main/application.h:16,
+                 from D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/main/display/lvgl_display/lvgl_display.cc:10:
+C:/Users/XNgoc/esp/v5.5.1/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h:419:9: note: this is the location of the previous definition
+  419 | #define _IO(x,y)        ((long)(IOC_VOID|((x)<<8)|(y)))
+      |         ^~~
+D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/managed_components/espressif__esp_video/include/linux/ioctl.h:55:9: warning: "_IOR" redefined
+   55 | #define _IOR(type,nr,size)  _IOC(_IOC_READ,(type),(nr),(_IOC_TYPECHECK(size)))
+      |         ^~~~
+C:/Users/XNgoc/esp/v5.5.1/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h:421:9: note: this is the location of the previous definition
+  421 | #define _IOR(x,y,t)     ((long)(IOC_OUT|((sizeof(t)&IOCPARM_MASK)<<16)|((x)<<8)|(y)))
+      |         ^~~~
+D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/managed_components/espressif__esp_video/include/linux/ioctl.h:56:9: warning: "_IOW" redefined
+   56 | #define _IOW(type,nr,size)  _IOC(_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
+      |         ^~~~
+C:/Users/XNgoc/esp/v5.5.1/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h:423:9: note: this is the location of the previous definition
+  423 | #define _IOW(x,y,t)     ((long)(IOC_IN|((sizeof(t)&IOCPARM_MASK)<<16)|((x)<<8)|(y)))
+      |         ^~~~
+[2262/2264] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/git/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/build/xiaozhi.bin
+[2263/2264] C:\Windows\system32\cmd.exe /C "cd /D D:\git\github\khuuxuanngoc...t/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/build/xiaozhi.bin 
+xiaozhi.bin binary size 0x280310 bytes. Smallest app partition is 0x3f0000 bytes. 0x16fcf0 bytes (36%) free.
+Executing action: flash
+Serial port COM9
+Connecting...
+Detecting chip type... ESP32-S3
+Running ninja in directory D:\git\github\khuuxuanngoc\Learn\LearnAI_chatbot\xiaozhi-esp32\build
+Executing "ninja flash"...
+[1/5] C:\Windows\system32\cmd.exe /C "cd /D D:\git\github\khuuxuanngoc\Learn...t/github/khuuxuanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/build/xiaozhi.bin 
+xiaozhi.bin binary size 0x280310 bytes. Smallest app partition is 0x3f0000 bytes. 0x16fcf0 bytes (36%) free.
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D D:\git\github\khuuxuanngoc\Learn...uanngoc/Learn/LearnAI_chatbot/xiaozhi-esp32/build/bootloader/bootloader.bin 
+Bootloader binary size 0x4050 bytes. 0x3fb0 bytes (50%) free.
+[4/5] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\XNgoc\esp\v5.5.1\esp-id.../Users/XNgoc/esp/v5.5.1/esp-idf/components/esptool_py/run_serial_tool.cmake 
+esptool.py --chip esp32s3 -p COM9 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x20000 xiaozhi.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin 0x800000 generated_assets.bin
+esptool.py v4.10.0
+Serial port COM9
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: cc:ba:97:23:79:e4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00004fff...
+Flash will be erased from 0x00020000 to 0x002a0fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000d000 to 0x0000efff...
+Flash will be erased from 0x00800000 to 0x00921fff...
+SHA digest in image updated
+Compressed 16464 bytes to 11430...
+Writing at 0x00000000... (100 %)
+Wrote 16464 bytes (11430 compressed) at 0x00000000 in 0.2 seconds (effective 805.3 kbit/s)...
+Hash of data verified.
+Compressed 2622224 bytes to 1558420...
+Writing at 0x00020000... (1 %)
+Writing at 0x0002c098... (2 %)
